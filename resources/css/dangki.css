@@ -1,0 +1,86 @@
+body{
+    background-color: rgba(255, 180, 94, 0.557);
+}
+.login{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    height: 800px;
+    width: 400px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.login h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.login form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .fillin{
+    position: relative;
+    border-bottom: 2px solid rgb(222, 144, 56);
+    margin: 30px 0;
+}
+
+.fillin input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.fillin label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.fillin span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #f0bb36;
+    transition: .5s;
+}
+
+.fillin input:focus ~ label,
+.fillin input:valid ~ label{
+    top: -5px;
+    color: #f0bb36;
+}
+
+.fillin input:focus ~ span::before,
+.fillin input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: 5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}

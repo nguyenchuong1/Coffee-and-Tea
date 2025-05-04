@@ -1,0 +1,272 @@
+
+/*big img*/
+.big-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    /*width: 100vw;*/
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.big-image::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/big-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    z-index: -2;
+    animation: Inout 5s infinite;
+}
+@keyframes Inout{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);    
+    }
+}
+.big-image::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:black ;
+    opacity: 0.4;
+    z-index: -2;
+}
+.big-image .big-image-content{
+    text-align: center;
+    max-width: 500px;
+}
+.big-image .big-image-content h2{
+    font-size: 50px;
+    color: var(--text-color); 
+    font-family: 'Dancing Script', cursive;
+}
+.big-image .big-image-content p{
+    font-size: 25px;
+    color: var(--text-color); 
+    font-weight: bold;
+    margin: 15px 0;
+    
+}
+/*menu item */
+
+/*=====================================Phần Thân=========================================*/
+.container1{
+    margin: auto;
+    max-width: 1200px;      
+
+}
+.mid .section-title{
+    width:100%;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+}
+/* .mid .section-title{    
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+} */
+.mid .section-title img{
+    width:90px;
+}
+.list{
+    display: grid;  
+    
+    grid-template-columns:282px 282px 282px 282px ;
+    column-gap: 20px;
+}
+.item .img_item img{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.item .img_item{
+    background-image: linear-gradient(to top right,
+    rgba(255, 180, 94, 0.557),rgba(255, 180, 94, 0.557));
+    padding:20px;
+    display:flex;
+    justify-content: center;/*can giua theo chieu ngang*/
+    align-items: center;
+    border-radius: 30px;
+}
+.item .content{
+    background-color: #ffffff24;
+    border-radius: 30px;
+    padding:50px 30px;
+    transform: translate(0,-50px);
+    backdrop-filter: blur(20px);
+    color: rgb(0, 0, 0);
+} 
+.title-item{
+    /* font-size: x-large; */
+    font-family: 'Dancing Script', cursive;
+}
+.item .content{
+    opacity: .7;
+    margin: 10px 0;
+}
+.item .content .price{
+    font-size: large;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.item .content input[type="button"]{
+    background-color:red ;
+    padding: 20px;
+    color:white;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+}
+.item .content input[type="button"]:active{
+    background-color:rgba(249, 80, 64, 0.774) ;
+
+}
+.item .content input[type="button"]:hover{
+    background-color:rgba(244, 64, 64, 0.886) ;
+
+}
+.item:hover img{
+    transform: translate(0,-20px);
+}
+.listpage{
+    width: 100%;
+}
+.listPage{
+    padding:20px;
+    align-items: center;
+    
+}
+.listPage li{
+    background-color:rgb(255, 148, 148) ;
+    padding:20px;
+    display: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.listPage .active{
+    background-color:var(--main-color) ;
+    color:#fff;
+}
+
+
+
+
+/*========================backtop=============================*/
+#back-top{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position:fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+  /*==========================Phan dau cua muc san pham menu =======================*/
+  .menu_sanpham{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    /*width: 100vw;*/
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+  .menu_sanpham::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/cà-phê-sữa-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    z-index: -2;
+}
+
+.menu_sanpham::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(43, 41, 41);
+    opacity: 0.4;
+    z-index: -2;
+}
+  .menu_sanpham .head_dau h2{   
+    padding:10px 0px;
+    display: block;
+    width:100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    color: var(--text-color);
+}
+.menu_sanpham .head_dau h1{
+    margin: 20px 0px;
+    display: block;
+    width:100%;
+    text-align: center;
+    font-size: 90px;
+    color: var(--text-color);
+    font-family: 'Dancing Script', cursive;
+}
+/*===============mục con của menu==========================*/
+.khung_chua{
+    margin-top:30px;
+}
+ul.muc_san_pham {
+    display: flex;
+}
+ ul.muc_san_pham li{
+    padding: 0px 20px;
+}
+ ul.muc_san_pham a{
+    display:block;/*như 1 cái div*/
+    padding:15px 0px;
+    text-transform:uppercase ;/*Tất cả chữ trong văn bản thành chữ hoa.*/
+    font-weight: bold;/*in đậm chữ*/
+    color:#333;
+    position: relative;
+    font-size:25px;
+}
+ul.muc_san_pham a::after{
+    content: "";
+    height: 5px;
+    width: 0px;
+    background: var(--main-color);
+    position:absolute;
+    bottom: 0px;
+    left:0;
+    transition: all 0.5s ease;
+}
+ul.muc_san_pham a:hover::after{
+    width:50%;
+    transform: translateX(100%);/* từ trái sang phải them trục x*/
+}

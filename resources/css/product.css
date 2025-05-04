@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+.cont{
+    width: 100%;
+    min-height: 100vh;
+    background: #ffa20029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    width: 90%;
+    max-width: 800px;
+    height: 380px;
+    display: flex;
+}
+
+.gallery{
+    flex-basis: 50%;
+    background: white;
+    padding: 25px 0px 10px 15px;
+}
+
+.gallery img{
+    width: 100%;
+    display: block;
+    height: 300px;
+}
+
+.dropdown{
+    flex-basis: 50%;
+    background-color: white;
+    padding: 20px;
+    padding-left: 60px;
+
+    color: black;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+.dropdown h1{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.divbox{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.select-menu,.checkbox-item{
+    margin: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+.select-menu h6{
+    font-size: 18px;
+    margin-left: 16px;
+}
+.select-menu{
+    width: 140px;
+}
+.select-menu form{
+    padding-top: 10px;
+}
+
+
+.checkbox-item{
+    position: relative;
+    width: 155px;
+    padding-left: 11px;
+}
+.checkbox-item h6{
+    font-size: 18px;
+    margin-left: 16px;
+}
+.checkbox-item form{
+    padding-top: 10px;
+}
+
+.count{
+    padding-top: 20px;
+}
+.count h6{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+
+
+.button{
+    display: flex;
+    align-items: center;
+    
+    margin-top: 30px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    background-color: rgb(214, 167, 65);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    user-select: none;
+    margin-right: 17px;
+
+    clear: both;
+}
+.button .icon{
+    font-size: 16px;
+    color: #fff;
+    margin-right: 10px;
+    display: none;
+}
+.button.checked .icon{
+    display: flex;
+}
+.icon.spinner.spin{
+    animation: spin 1.3s ease-in-out infinite;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.icon.check{
+    display: inline-flex;
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: rgb(214, 167, 65);
+}
+.button .btn-text{
+    font-size: 16px;
+    font-weight: 400px;
+    color: #fff;
+}

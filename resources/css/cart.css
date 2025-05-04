@@ -1,0 +1,59 @@
+
+/* ===== Section =====*/
+.part_of_cart{
+    margin-bottom: 159px;
+}
+.bxs-cart:hover{
+    opacity: 0.9;
+}
+.part_of_cart::after{
+    margin-top: 100px;
+    width: 100%;
+    min-height: 50vh;
+}
+
+
+table{
+    border-collapse: collapse;
+    
+}
+.part_of_cart th,td{
+    border: 1px black solid;
+    padding: 5px 10px;
+    text-align: center;
+}
+.table_cart{
+    width: 100%;
+}
+#giohang img{
+    height: 150px;
+    width: 150px;
+}
+#giohang p{
+    font-size: 1rem;
+}
+#giohang .sl{
+    width: 80px;
+    height: 30px;
+}
+#giohang i{
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}
+#giohang i:hover{
+    opacity: 0.8;
+}
+#giohang i:active{
+    opacity: 0.9;
+}
+.container input#dhn{
+    border:none;
+    color: var(--color5);
+    width:139px;
+    font-size:20px;
+    cursor:pointer;
+}
+.container input#dhn:hover{
+    color: red;
+}
