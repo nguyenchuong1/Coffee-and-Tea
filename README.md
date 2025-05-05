@@ -22,7 +22,7 @@ Coffee-and-Tea là một dự án website thương mại điện tử cá nhân 
   
 - *Sau đó mở app XAMPP lên, bật MySQL và Apache Module ,nhập http://localhost/phpmyadmin trên trình duyệt*
 - *Rồi tạo một database mới đặt tên là "doanweb"*
-- *Xong sau đó import file ở : ./admin/Mysql/doanweb. *
+- *Xong sau đó import file ở : ./admin/Mysql/doanweb.*
 - *Sau khi tạo database thành công, mở một page mới nhập http://localhost/Coffee-and-Tea/*
 ## Điều kiện tiên quyết
 - *Cài đặt PHP*
