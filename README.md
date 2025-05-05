@@ -10,7 +10,7 @@ Coffee-and-Tea là một dự án website thương mại điện tử cá nhân 
 - *PHP*
 ## Cài đặt và thiết lập
 Để thiết lập và cài đặt Dự án Coffee and Tea , hãy làm theo các bước dưới đây:
-- *Mở thư mục xampp\htdocs\ bàng Visual Code*
+- *Mở thư mục xampp\htdocs\ bằng Visual Code*
 - *Sao chép dự án bằng lệnh:*
   ``` bash
   git clone https://github.com/nguyenchuong1/Coffee-and-Tea.git
@@ -30,4 +30,4 @@ Coffee-and-Tea là một dự án website thương mại điện tử cá nhân 
 - *IDE để chỉnh sửa và chạy mã nguồn (Chúng tôi sử dụng Visual Studio Code 🔥).*
 - *Git để quản lý phiên bản công việc của bạn.*
 ## Tác giả
-Nguyễn Hoàng Chươnng
+Nguyễn Hoàng Chương
