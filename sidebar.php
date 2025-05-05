@@ -38,7 +38,7 @@ if (isset($_GET['dangxuat']) && $_GET['dangxuat'] == 1) {
                         </li>
                         <li class="menu-item"><a href="index.php?quanly=main">Trang Chủ</a></li>
                         <li class="menu-item"><a href="index.php?quanly=menu&id=1">Thực đơn</a></li>
-                        <li class="menu-item"><a href="lienhe">Liên Hệ</a></li>
+                        <li class="menu-item"><a href="#lien-he">Liên Hệ</a></li>
                         <li class="menu-item"><a href="index.php?quanly=giohang"><i class="fa-solid fa-cart-shopping"></i></a></li>
                         <?php
                         if (isset($_SESSION['dangky'])) {

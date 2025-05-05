@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="./resources/css/footer.css">
-<section class="footer-web ">
+<section class="footer-web " id="lien-he">
     <div class="phancuoi ">
 
         <div class="khung">
